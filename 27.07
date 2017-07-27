@@ -1,0 +1,53 @@
+>>> def deneme(x):
+	x+5
+
+	
+>>> deneme(5)
+>>> def deneme(x):
+	print('x parametresinin aldigi deger:' ,x)
+
+	
+>>> deneme(10)
+x parametresinin aldigi deger: 10
+>>> def deneme(x):
+	y=x+5
+	print(y)
+
+	
+>>> deneme(15)
+20
+>>> def deneme(x):
+	print('x parametresinin aldigi deger: ',x)
+	y=x+5
+	print('hesaplama sonucu: ',y)
+	return y
+
+>>> deneme(9)
+x parametresinin aldigi deger:  9
+hesaplama sonucu:  14
+14
+>>> deneme(36)
+x parametresinin aldigi deger:  36
+hesaplama sonucu:  41
+41
+>>> def kareAl(x):
+	y=x*x
+	return y
+
+>>> kareAl(6)
+36
+>>> def kokAl(x):
+	y=x**0.5
+	return y
+
+>>> kokAl(9)
+3.0
+>>> def kokAl(x):
+	y=x**0.5
+	return int(y)
+
+>>> kokAl(121)
+11
+>>> def kokAl(sayi,derece=2):
+    kok=sayi**(1/derece)
+    return kok
