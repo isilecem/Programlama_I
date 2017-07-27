@@ -1,0 +1,32 @@
+>>> def kokAl(sayi,derece=2):
+    kok=sayi**(1/derece)
+    return kok
+girilen=input('karekoku alinacak sayiyi giriniz: ')
+girilenFloat=float(girilen)
+k=kokAl(girilenFloat)
+print(k)
+#ilk 3 satırda işlem tanımı yapılıyor. Bu gizli bir işlem, daha sonra karşımıza çıkacak. İlk olarak bizden sayı girmemizi istiyor ve o sayı float’a çevrilip girilenFloat değişkenine eşleniyor.
+Ondan sonra kokAl fonksiyonunda, girilenFloat yerine konuyor ve print ediliyor.#
+>>> def toplama(a,b):
+    return a+b
+def ortalama(a,b):
+    t=toplama(a,b)
+    return t/2
+#ortalama(8,9) -> üst iki satırın önemi yok. Orası tanımlama kısmıdır. 3. satırdan işleme başlarız, ortalama içinde toplama fonksiyonu varsa toplamaya gider yapar ve geri döner.#
+
+ALANI VE ÇEVREYİ ÇALIŞTIRAN FONKSİYONLAR:
+#>>> def cember(r,pi=3.14)
+	alan=pi*…
+#>>> def cember(r):
+    alan=3.14*(r**2)
+>>> def cember(r):
+    pi=3.14
+    alan=pi*(r**2)
+    cevre=2*pi*r    
+    return alan, cevre
+        return cevre
+girilen=input('yaricapi giriniz: ')
+girilen=int(girilen)
+sonuc=cember(girilen)
+print (sonuc)
+
