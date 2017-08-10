@@ -1,0 +1,74 @@
+n=int(input('kaca kadar sayalim?: '))
+for i in range(n):
+    print(i)
+
+-
+
+boylar=[1001, 1.50, 1.60, 1.70, 1.80]
+kilolar=[1001, 50, 55, 60, 65]
+if (len(boylar))==(len(kilolar)):
+         if (boylar[0]==kilolar[0]):
+             print(boylar+kilolar)
+elif (len(boylar)!=len(kilolar)):
+    print ("boylar esit degildir")
+elif (boylar[0]!=kilolar[0]):
+    print ("id no esit degildir")
+
+-
+
+giriş=""" KDV hesaplama proğramına
+     hoşgeldiniz
+%1  
+%8  
+%18
+tuşlayınız"""
+print(giriş)
+anahtar=1
+while anahtar==1:
+    soru=input("lütfen kdv oranlardan birini seçip tuşlayınız: ")
+    if soru=="q":
+        print("çıkılıyor")
+        anahtar=0
+    elif soru=="1":
+        sayı1=int(input("tutar: "))
+        print(sayı1,"x",0.01,"=",sayı1 * 0.01)
+   
+    elif soru=="8":
+        sayı2=int(input("tutar: "))
+        print(sayı2,"x",0.08,"=",sayı2 * 0.08)
+    elif soru=="18":
+                sayı3=int(input("tutar: "))
+        print(sayı3,"x",0.18,"=",sayı3 * 0.18)
+    else:
+        print("yanlış giriş")
+
+-
+
+ogrenciler=['derin','can','emre','melike']
+ogr=[]
+for u in ogrenciler:
+         ogr.append(u)
+ogr.append('ismail')
+print(ogr)
+print(ogrenciler)
+#tanımladık. Ogrenciler’deki hepsi ogr’ye tanımlandı. Ogr’ye ismail’i ekledik. Ama ogrenciler’de İsmail yok. Eşitlik yapmadığımız için ogr’de İsmail var
+
+-
+
+ogrenciler=['derin','can','emre','melike']
+ogr=[]
+for u in ogrenciler:
+         ogr.append(u)
+ogr.append('ismail')
+öğrenciler=ogr
+print(ogr)
+print(ogrenciler)
+#şimdi ikisinde de İsmail çıkıyor.
+
+-
+
+
+
+
+
+
